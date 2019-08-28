@@ -1,8 +1,5 @@
 # GSI028-2019-2-UFU / Trabalho de sistemas distribuídos
 
-Alt-H1
-======
-
 ## Introdução 
   ⋅⋅* test
 ## Descrição
