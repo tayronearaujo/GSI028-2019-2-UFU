@@ -1,20 +1,20 @@
-# H1 GSI028-2019-2-UFU / Trabalho de sistemas distribuídos
+# GSI028-2019-2-UFU / Trabalho de sistemas distribuídos
 
 Alt-H1
 ======
 
-## H2 Introdução 
+## Introdução 
   ⋅⋅* test
-## H2 Descrição
+## Descrição
   ⋅⋅* test
-## H2 Componentes:
+## Componentes:
 
 ⋅⋅* Jogadores (Acessando pelo navegador web)
 ⋅⋅* Servidor
 ⋅⋅* Banco de dados sql
 
 
-## H2 Testes 
+## Testes 
 
 ⋅⋅* Testes unitários: 
 ⋅⋅* Teste de recuperação de falhas: 
