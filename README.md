@@ -13,5 +13,5 @@
 ## Testes 
 
 * Teste de recuperação de falhas: Valida se a seção está sendo devidamente armazenada.
-* Teste de concorrência / performance: Verifica a quantida de salas de batalha / jgadores que o servidor suporta.
+* Teste de concorrência / performance: Verifica a quantida de salas de batalha / jogadores que o servidor suporta.
 * Testes Unitários: verifica se a lógica de dano e gameplay está sendo executada corretamente.
