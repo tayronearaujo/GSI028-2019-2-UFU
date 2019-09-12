@@ -8,7 +8,12 @@ class Main extends Component {
   render() {
     return (
       <div>
-        main
+
+
+
+
+
+
         <Router>
           <Route path="/login" component={Login} />
           <Route path="/signup" component={CreateAccount} />
