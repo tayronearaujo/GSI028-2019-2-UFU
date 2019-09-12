@@ -20,7 +20,7 @@ connection.connect(err => {
 })
 
 
-console.log(connection);
+//console.log(connection);
 
 
 app.use (cors());
@@ -30,6 +30,8 @@ app.get('/', (req , res) =>{
 });
 
 
+
+//Retorna a query do da seção  
 app.get('/user', (req, res) => {
     connection.query(SELECT_ALL_USERS_QUERY, (err, results) =>{
 
@@ -38,11 +40,13 @@ app.get('/user', (req, res) => {
         }
         else{
             return res.json({
-                data: results
+                User: results
             })
         }
     });
 });
+
+
 
 app.listen (4000, () => {
     console.log(`Server on`)
