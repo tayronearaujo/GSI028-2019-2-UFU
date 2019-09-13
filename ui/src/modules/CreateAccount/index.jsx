@@ -13,18 +13,19 @@ class CreateAccount extends Component {
             <div className="row ">
               <div className="col-xs-12 col-sm-6 col-md-12 form-group">
                 <label>Nome:</label>
-                <input type="text" placeholder="Insira seu nome" className="form-control" id=""></input>
+                <input type="text" placeholder="Insira seu nome" className="form-control" id=""  value="" required></input>
+
               </div>
 
               <div className="col-xs-12 col-sm-6 col-md-12 form-group">
                 <label>Email:</label>
-                <input type="email" placeholder="pvpgame@gmail.com" className="form-control" id=""></input>
+                <input type="email" placeholder="pvpgame@gmail.com" className="form-control" id=""  value="" required></input>
               </div>
 
               <div className="col-xs-12 col-sm-6 col-md-12 form-group">
                 <label>Senha:</label>
-                <input type="password" placeholder="Insira sua senha" className="form-control" id=""></input>
-                <small id="" class="form-text text-muted">Sua senha deve conter no mínimo 8 caracteres.</small>
+                <input type="password" placeholder="Insira sua senha" className="form-control" id=""  value="" required></input>
+                <small>Sua senha deve conter no mínimo 8 caracteres.</small>
               </div>
           </div>
 

@@ -1,53 +1,27 @@
-const express = require ('express');
-const cors = require ('cors');
-const mysql = require('mysql');
-
+const express = require('express')
+const cors = require('cors')
+const bodyParser = require('body-parser')
 const app = express();
-
-const SELECT_ALL_USERS_QUERY = 'SELECT * FROM usuario';
-
-const connection = mysql.createConnection({
-    host: 'localhost' ,
-    user: 'root',
-    password: '',
-    database: 'pvp_game'
-});
+const port = process.env.PORT || 4000
 
 
-connection.connect(err => {
-    if (err) 
-        return err;
-})
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
+app.use(cors())
 
 
-//console.log(connection);
-
-
-app.use (cors());
 
 app.get('/', (req , res) =>{
-    res.send('Conectado')
+    res.send('Api Conectada')
 });
 
 
+const Users = require('./routes/Users')
+app.use('/users', Users)
 
-//Retorna a query do da seção  
-app.get('/user', (req, res) => {
-    connection.query(SELECT_ALL_USERS_QUERY, (err, results) =>{
 
-        if(err){
-            return res.send(err)
-        }
-        else{
-            return res.json({
-                User: results
-            })
-        }
-    });
+
+app.listen(port, function() {
+  console.log('Server is running on port: ' + port)
 });
 
-
-
-app.listen (4000, () => {
-    console.log(`Server on`)
-})
